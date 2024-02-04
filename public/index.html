@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="main.js"></script>
+  </head>
+  <body
+    class="font-['Overpass'] text-[#ffffff] font-normal bg-[#121417] grid place-items-center min-h-screen"
+  >
+    <div id="rating-container" class="block">
+      <div class="bg-[#252d37] w-72 p-5 rounded-xl flex flex-col gap-4">
+        <div>
+          <img
+            class="bg-[#333e4d] p-3 rounded-full"
+            src="images/icon-star.svg"
+            alt="icon star"
+          />
+        </div>
+        <h1 class="text-2xl font-bold">How did we do?</h1>
+        <p class="text-sm text-[#959eac] font-normal">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul
+          class="flex justify-around items-center text-[#959eac] font-black text-sm"
+        >
+          <li>
+            <button
+              class="bg-[#333e4d] focus:bg-[#959eac] duration-200 focus:text-[#ffffff] p-3 aspect-video rounded-full hover:bg-[#fb7413] hover:text-[#ffffff] ratings"
+            >
+              1
+            </button>
+          </li>
+          <li>
+            <button
+              class="bg-[#333e4d] focus:bg-[#959eac] duration-200 focus:text-[#ffffff] p-3 aspect-video rounded-full hover:bg-[#fb7413] hover:text-[#ffffff] ratings"
+            >
+              2
+            </button>
+          </li>
+          <li>
+            <button
+              class="bg-[#333e4d] focus:bg-[#959eac] duration-200 focus:text-[#ffffff] p-3 aspect-video rounded-full hover:bg-[#fb7413] hover:text-[#ffffff] ratings"
+            >
+              3
+            </button>
+          </li>
+          <li>
+            <button
+              class="bg-[#333e4d] focus:bg-[#959eac] duration-200 focus:text-[#ffffff] p-3 aspect-video rounded-full hover:bg-[#fb7413] hover:text-[#ffffff] ratings"
+            >
+              4
+            </button>
+          </li>
+          <li>
+            <button
+              class="bg-[#333e4d] focus:bg-[#959eac] duration-200 focus:text-[#ffffff] p-3 aspect-video rounded-full hover:bg-[#fb7413] hover:text-[#ffffff] ratings"
+            >
+              5
+            </button>
+          </li>
+        </ul>
+        <button
+          id="submit-btn"
+          class="bg-[#fb7413] text-sm uppercase p-2 rounded-2xl hover:bg-[#ffffff] hover:text-[#fb7413] duration-200"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div id="thanks-container" class="hidden">
+      <div
+        class="bg-[#252d37] w-72 p-5 rounded-xl flex flex-col items-center text-center gap-4"
+      >
+        <img
+          class="w-30"
+          src="images/illustration-thank-you.svg"
+          alt="thanks img"
+        />
+        <div>
+          <p class="bg-[#333e4d] text-[#fb7413] py-2 px-3 rounded-2xl text-sm">
+            You selected <span id="rating-user">0</span> out of 5
+          </p>
+        </div>
+        <h1 class="text-2xl font-bold">Thank you!</h1>
+        <p class="text-sm text-[#959eac] font-normal">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
